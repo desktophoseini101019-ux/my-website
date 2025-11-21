@@ -1,0 +1,175 @@
+:root {
+  --bg: #0f1724;
+  --muted: #9aa4b2;
+  --accent: #38bdf8;
+  --radius: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  background: #0f1724;
+  color: #f0f0f0;
+  line-height: 1.7;
+  font-family: 'vazir';
+
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px
+}
+
+header {
+  text-align: center;
+  padding: 60px 0
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent)
+}
+
+header h1 {
+  margin: 16px 0 6px;
+  font-size: 32px;
+}
+
+header p {
+  color: var(--muted);
+  margin: 0
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px
+}
+
+nav a {
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--muted)
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--accent)
+}
+
+section {
+  margin: 48px 0
+}
+
+h2 {
+  margin-bottom: 12px
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3)
+}
+
+.skills {
+  display: flex;
+  gap: 10px
+}
+
+.skills span {
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  font-size: 15px
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform .25s ease-out;
+}
+
+.grid img:hover{
+  transform: translateY(-5px);
+}
+
+form {
+  display: grid;
+  gap: 12px
+}
+
+input , textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: inherit
+}
+
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 0;
+  background: var(--accent);
+  font-weight: 700;
+  font-family: 'vazir';
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 28px 0;
+  font-size: .9rem
+}
+
+@font-face {
+  font-family:'vazir-black';
+  src: url(font/Vazir-Black.woff2) format('woff');
+}
+
+@font-face {
+  font-family:'Vazir-Bold';
+  src: url(font/Vazir-Bold.woff2) format('woff');
+}
+
+@font-face {
+  font-family:'Vazir-Light';
+  src: url(font/Vazir-Light.woff2) format('woff');
+}
+
+@font-face {
+  font-family:'Vazir-Medium';
+  src: url(font/Vazir-Medium.woff2) format('woff');
+}
+
+@font-face {
+  font-family:'Vazir-Thin';
+  src: url(font/Vazir-Thin.woff2) format('woff');
+}
+
+@font-face {
+  font-family:'vazir';
+  src: url(font/Vazir.woff2) format('woff');
+}
